@@ -16,8 +16,6 @@ public class Calculator {
 		// run method to remove any non digits or mathematical operands
 		temp = removeAllNonDigitsExceptAtritmeticOperands(expression);
 
-		// TODO: Write code that parse the expression and returns a string with the
-		// expected result.
 		temp = parseExpression(temp);
 
 		// RETURN STRING OR EXCEPTION
