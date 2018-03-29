@@ -34,16 +34,16 @@ public class Calculator {
 		return null;
 	}
 
-	public double add(double tal1, double tal2) {
-		return tal1 + tal2;
+	public double add(double number1, double number2) {
+		return number1 + number2;
 	}
 
-	public double subtract(double tal1, double tal2) {
-		return tal1 - tal2;
+	public double subtract(double number1, double number2) {
+		return number1 - number2;
 	}
 
-	public double multiply(double tal1, double tal2) {
-		return tal1 * tal2;
+	public double multiply(double number1, double number2) {
+		return number1 * number2;
 	}
 
 	public double divide(double a, double b) {

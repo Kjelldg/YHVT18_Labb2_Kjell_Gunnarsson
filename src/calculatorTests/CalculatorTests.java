@@ -2,6 +2,10 @@ package calculatorTests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/*
+ * Created by Kjell, Marcus & Jessica.
+ */
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +15,7 @@ class CalculatorTests {
 
 	public static Calculator calculator;
 
-	@BeforeEach
+	@BeforeEach // Instantierar objektet före varje test.
 	void Initialize() {
 		calculator = new Calculator();
 	}
@@ -19,55 +23,55 @@ class CalculatorTests {
 	@Test
 	public void ReturnCorrectNumber() {
 		// ACT
-		double expected = 2;
-		double actual = Double.parseDouble(calculator.calculateExpression("1+1"));
+		double expectedValue = 200;
+		double actualValue = Double.parseDouble(calculator.calculateExpression("100+100"));
 		// ASSERT
-		assertEquals(expected, actual);
+		assertEquals(expectedValue, actualValue);
 	}
 
 	@Test
 	public void ReturnsCorrectMultipliedNumber() {
 		// ACT
-		double expected = 12d;
-		double actual = calculator.multiply(3, 4);
+		double expectedValue = 25d;
+		double actualValue = calculator.multiply(5, 5);
 		// ASSERT
-		assertEquals(expected, actual);
+		assertEquals(expectedValue, actualValue);
 	}
 
 	@Test
 	public void ReturnsCorrectDividedNumber() {
 		// ACT
-		double expected = 5d;
-		double actual = calculator.divide(20, 4);
+		double expectedValue = 10d;
+		double actualValue = calculator.divide(50, 5);
 		// ASSERT
-		assertEquals(expected, actual);
+		assertEquals(expectedValue, actualValue);
 	}
 
 	@Test
 	public void ReturnsCorrectAddedNumber() {
 		// ACT
-		double expected = 12d;
-		double actual = calculator.add(8, 4);
+		double expectedValue = 20d;
+		double actualValue = calculator.add(16, 4);
 		// ASSERT
-		assertEquals(expected, actual);
+		assertEquals(expectedValue, actualValue);
 	}
 
 	@Test
 	public void ReturnsCorrectSubtractedNumber() {
 		// ACT
-		double expected = 12d;
-		double actual = calculator.subtract(14, 2);
+		double expectedValue = 300d;
+		double actualValue = calculator.subtract(400, 100);
 		// ASSERT
-		assertEquals(expected, actual);
+		assertEquals(expectedValue, actualValue);
 	}
 
 	@Test
 	public void ReturnsCorrectModulus() {
 		// ACT
-		double expected = 0;
-		double actual = calculator.modulus(3, 3);
+		double expectedValue = 0;
+		double actualValue = calculator.modulus(20, 20);
 		// ASSERT
-		assertEquals(expected, actual);
+		assertEquals(expectedValue, actualValue);
 	}
 
 	@Test
